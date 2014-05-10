@@ -60,6 +60,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	device/lge/mako/init.mako.rc:root/init.mako.rc \
 	device/lge/mako/init.mako.usb.rc:root/init.mako.usb.rc \
+	device/lge/mako/init.mako.usbdisk.rc:root/init.mako.usbdisk.rc \
 	device/lge/mako/fstab.mako:root/fstab.mako \
 	device/lge/mako/ueventd.mako.rc:root/ueventd.mako.rc \
 	device/lge/mako/media_profiles.xml:system/etc/media_profiles.xml \
@@ -97,7 +98,8 @@ PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
 	frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
 	frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/etc/permissions/android.hardware.audio.low_latency.xml \
-	frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml
+	frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
+	frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml
 
 # NFC packages
 PRODUCT_PACKAGES += \
