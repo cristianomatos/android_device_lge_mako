@@ -287,4 +287,7 @@
     <bool name="config_enableTorch">true</bool>
 
     <bool name="config_enableLockScreenTranslucentDecor">true</bool>
+
+    <!-- Enable lockscreen rotation by default -->
+    <bool name="config_enableLockScreenRotation">true</bool>
 </resources>
