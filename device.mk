@@ -184,6 +184,10 @@ PRODUCT_PACKAGES += libqcomvoiceprocessing
 PRODUCT_COPY_FILES += \
     device/lge/mako/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
+# DIRAC HD
+PRODUCT_COPY_FILES += \
+    device/lge/mako/libdirac/libdirac.so:system/lib/soundfx/libdirac.so
+
 PRODUCT_PACKAGES += \
 	hci_qcomm_init
 
