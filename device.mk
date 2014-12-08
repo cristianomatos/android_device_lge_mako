@@ -121,6 +121,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
     device/lge/mako/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf
 
+# DIRAC HD
+PRODUCT_COPY_FILES += \
+    device/lge/mako/libdirac/libdirac.so:system/lib/soundfx/libdirac.so
+
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.opengles.version=196608
 
@@ -272,6 +276,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	persist.sys.usb.config=mtp
+
+# DiracHD audio effects
+PRODUCT_PROPERTY_OVERRIDES += \
+    dsp.dirac.enable=true
 
 # Hardware codecs
 PRODUCT_PROPERTY_OVERRIDES += \
