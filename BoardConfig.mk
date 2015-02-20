@@ -21,13 +21,6 @@ TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := krait
 
-# Krait optimizations
-TARGET_USE_KRAIT_BIONIC_OPTIMIZATION := true
-TARGET_USE_KRAIT_PLD_SET := true
-TARGET_KRAIT_BIONIC_PLDOFFS := 10
-TARGET_KRAIT_BIONIC_PLDTHRESH := 10
-TARGET_KRAIT_BIONIC_BBTHRESH := 64
-TARGET_KRAIT_BIONIC_PLDSIZE := 64
 TARGET_MPDECISION_BOOST_SOCKET := /dev/socket/mpdecision/touchboost
 
 TARGET_NO_BOOTLOADER := true
@@ -140,6 +133,7 @@ BOARD_SEPOLICY_UNION += \
        rmt.te \
        sensors.te \
        surfaceflinger.te \
+       system_app.te \
        system_server.te \
        tee.te \
        te_macros \
